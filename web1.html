@@ -1,96 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tara777</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-<style>
-:root{
-  --bg-dark:#0a0a0a;--bg-panel:#141414;--line:rgba(255,255,255,.06);
-  --text:#f5f5f5;--muted:#b8b8b8;--gold1:#C6A454;--gold2:#8C7A43;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Poppins',sans-serif;background:linear-gradient(180deg,#000,#0a0a0a 60%,#111);color:var(--text);overflow-x:hidden}
-header{width:100%;background:linear-gradient(90deg,var(--gold1),var(--gold2));display:flex;justify-content:center;align-items:center;padding:10px 0;position:sticky;top:0;z-index:30;box-shadow:0 2px 12px rgba(198,164,84,.35)}
-header img{height:38px;width:auto;max-width:140px}
-@media(max-width:480px){header img{height:32px;max-width:120px;}}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tara777 - Trusted Online Gaming & Slots Platform</title>
 
-/* Follow Us */
-.follow-bar{position:sticky;top:70px;z-index:20;display:flex;justify-content:center;gap:10px;padding:10px 14px;backdrop-filter:blur(10px);background:rgba(255,255,255,.05);border-radius:30px;width:fit-content;margin:12px auto 0;box-shadow:0 0 20px rgba(198,164,84,.2);overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}
-.follow-bar::-webkit-scrollbar{display:none}
-.follow-bar a{position:relative;overflow:hidden;min-width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--gold1),var(--gold2));display:flex;align-items:center;justify-content:center;text-decoration:none;transition:transform .25s ease;flex:0 0 auto}
-.follow-bar a:hover{transform:translateY(-2px)}
-.follow-bar svg{width:20px;height:20px;fill:#111}
-.follow-bar a::before{content:"";position:absolute;top:0;left:-80%;width:60%;height:100%;background:linear-gradient(120deg,rgba(255,255,255,.08) 0%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.08) 100%);transform:skewX(-25deg);animation:iconShine 5.5s ease-in-out infinite}
-@keyframes iconShine{0%{left:-80%}12%{left:120%}100%{left:120%}}
+  <!-- SEO Meta -->
+  <meta name="description" content="Tara777 is a trusted online gaming platform offering secure deposits, fast withdrawals, lucky draw events, FreeCash rewards, and refer & earn bonuses. Play popular slots, card games, and premium titles with a safe and fair experience." />
+  <meta name="keywords" content="Tara777, online casino, online slots, lucky draw, FreeCash, refer and earn, real money games, secure gaming, fast withdrawal" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.tara777.com/" />
 
-/* Intro */
-.intro{max-width:880px;margin:22px auto;text-align:center;padding:0 16px}
-.intro h2{font-size:1.4rem;font-weight:700;background:linear-gradient(90deg,var(--gold1),var(--gold2));-webkit-background-clip:text;color:transparent;margin-bottom:10px}
-.intro p{color:var(--muted);line-height:1.6;font-size:1rem}
+  <!-- Social Preview (optional, edit URL/logo) -->
+  <meta property="og:title" content="Tara777 - Trusted Online Gaming Platform" />
+  <meta property="og:description" content="Play, win, and enjoy secure online gaming, lucky draws, FreeCash rewards and refer & earn bonuses on Tara777." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.tara777.com/" />
+  <meta property="og:image" content="https://i.imgur.com/lgEvF8E.png" />
 
-/* Carousel */
-.carousel{max-width:1080px;margin:20px auto;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--bg-panel);box-shadow:0 6px 24px rgba(198,164,84,.1)}
-.slide{display:none}
-.slide.active{display:block}
-.banner-container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:24px 30px;gap:20px}
-.banner-img{flex:1 1 55%;border-radius:14px;overflow:hidden}
-.banner-img img{width:100%;height:auto;border-radius:14px;object-fit:cover}
-.slide-text{flex:1 1 40%;text-align:left}
-.slide-text h2{font-size:clamp(1rem,2.5vw,1.6rem);background:linear-gradient(90deg,var(--gold1),var(--gold2));-webkit-background-clip:text;color:transparent;font-weight:700}
-.slide-text p{color:var(--muted);margin-top:8px;font-size:.95rem}
-@media(max-width:768px){.banner-container{flex-direction:column;padding:16px}.slide-text{text-align:center}.slide-text p{font-size:.9rem}}
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
-/* Section Titles */
-.section h3{text-align:center;font-size:1.35rem;margin-bottom:18px;font-weight:700;background:linear-gradient(90deg,var(--gold1),var(--gold2));-webkit-background-clip:text;color:transparent}
+  <style>
+    :root{
+      --bg-dark:#0a0a0a;
+      --bg-panel:#141414;
+      --line:rgba(255,255,255,.06);
+      --text:#f5f5f5;
+      --muted:#b8b8b8;
+      --gold1:#C6A454;
+      --gold2:#8C7A43;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(180deg,#000,#0a0a0a 60%,#111);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+    a{text-decoration:none;color:inherit}
 
-/* Game Gallery */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;max-width:1080px;margin:0 auto;padding:0 12px}
-.tile{background:#181818;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(198,164,84,.08);text-align:center;padding-bottom:10px}
-.tile img{width:100%;height:160px;object-fit:contain;padding:10px}
-.tile p{color:var(--muted);font-size:.9rem;margin-top:4px;padding:0 6px}
-.read-more{color:var(--gold1);font-size:.85rem;cursor:pointer;display:block;margin-top:2px}
+    /* Header */
+    header{
+      width:100%;
+      background:linear-gradient(90deg,var(--gold1),var(--gold2));
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:10px 0;
+      position:sticky;
+      top:0;
+      z-index:30;
+      box-shadow:0 2px 12px rgba(198,164,84,.35);
+    }
+    header img{
+      height:38px;
+      width:auto;
+      max-width:160px;
+    }
+    @media(max-width:480px){
+      header img{
+        height:32px;
+        max-width:130px;
+      }
+    }
 
-/* Lucky Draw / FreeCash / Refer & Earn */
-.bonus-intro{max-width:1080px;margin:40px auto;text-align:center;padding:0 12px}
-.bonus-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-.bonus-card{background:#181818;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px;text-align:left;box-shadow:0 4px 24px rgba(198,164,84,.1)}
-.bonus-card h4{color:var(--gold1);margin-bottom:8px;font-size:1.05rem}
-.bonus-card p{color:var(--muted);font-size:.9rem;line-height:1.6;text-align:justify}
+    /* Follow Us */
+    .follow-bar{
+      position:sticky;
+      top:70px;
+      z-index:20;
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      padding:10px 14px;
+      backdrop-filter:blur(10px);
+      background:rgba(255,255,255,.05);
+      border-radius:30px;
+      width:fit-content;
+      margin:12px auto 0;
+      box-shadow:0 0 20px rgba(198,164,84,.2);
+      overflow-x:auto;
+      flex-wrap:nowrap;
+      scrollbar-width:none;
+    }
+    .follow-bar::-webkit-scrollbar{display:none}
+    .follow-bar a{
+      position:relative;
+      overflow:hidden;
+      min-width:42px;
+      height:42px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--gold1),var(--gold2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex:0 0 auto;
+      transition:transform .25s ease;
+    }
+    .follow-bar a:hover{transform:translateY(-2px)}
+    .follow-bar svg{
+      width:20px;
+      height:20px;
+      fill:#111;
+    }
+    .follow-bar a::before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:-80%;
+      width:60%;
+      height:100%;
+      background:linear-gradient(120deg,rgba(255,255,255,.08),rgba(255,255,255,.22),rgba(255,255,255,.08));
+      transform:skewX(-25deg);
+      animation:iconShine 5.5s ease-in-out infinite;
+    }
+    @keyframes iconShine{
+      0%{left:-80%}
+      12%{left:120%}
+      100%{left:120%}
+    }
 
-/* Player Reviews */
-.reviews{max-width:1080px;margin:40px auto;padding:0 12px}
-.reviews h3{text-align:center;font-size:1.35rem;margin-bottom:18px;font-weight:700;background:linear-gradient(90deg,var(--gold1),var(--gold2));-webkit-background-clip:text;color:transparent}
-.review-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-.review{background:#181818;border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;align-items:center;gap:12px;box-shadow:0 4px 20px rgba(198,164,84,.08)}
-.review img{width:60px;height:60px;border-radius:50%;object-fit:cover;border:2px solid var(--gold1)}
-.review h4{font-size:1rem;color:var(--gold1);margin-bottom:4px}
-.review p{color:var(--muted);font-size:.9rem;line-height:1.4}
-@media(max-width:768px){.review{flex-direction:row;text-align:left}.review img{width:55px;height:55px}}
+    /* Intro */
+    .intro{
+      max-width:880px;
+      margin:22px auto 10px;
+      text-align:center;
+      padding:0 16px;
+    }
+    .intro h1{
+      font-size:1.6rem;
+      font-weight:700;
+      background:linear-gradient(90deg,var(--gold1),var(--gold2));
+      -webkit-background-clip:text;
+      color:transparent;
+      margin-bottom:10px;
+    }
+    .intro p{
+      color:var(--muted);
+      line-height:1.7;
+      font-size:.95rem;
+    }
+    @media(max-width:480px){
+      .intro h1{font-size:1.35rem}
+      .intro p{font-size:.9rem}
+    }
 
-/* About / Privacy / Terms */
-.faq{max-width:1080px;margin:40px auto;padding:0 12px}
-.faq h3{text-align:center;font-size:1.35rem;margin-bottom:18px;font-weight:700;background:linear-gradient(90deg,var(--gold1),var(--gold2));-webkit-background-clip:text;color:transparent}
-.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:12px;margin-bottom:12px;background:#181818;transition:.3s}
-.faq-question{padding:14px 16px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
-.faq-question span{transition:.3s}
-.faq-answer{display:none;padding:0 16px 14px 16px;color:var(--muted);font-size:.95rem;line-height:1.6;text-align:justify}
-.faq-item.active .faq-answer{display:block}
-.faq-item.active .faq-question{background:linear-gradient(90deg,var(--gold1),var(--gold2));color:#111}
-.faq-item.active .faq-question span{transform:rotate(90deg)}
+    /* Carousel */
+    .carousel{
+      max-width:1080px;
+      margin:18px auto 26px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      overflow:hidden;
+      background:var(--bg-panel);
+      box-shadow:0 6px 24px rgba(198,164,84,.1);
+    }
+    .slide{display:none}
+    .slide.active{display:block}
+    .banner-container{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      padding:22px 26px;
+      gap:18px;
+    }
+    .banner-img{
+      flex:1 1 55%;
+      border-radius:14px;
+      overflow:hidden;
+    }
+    .banner-img img{
+      width:100%;
+      height:auto;
+      border-radius:14px;
+      object-fit:cover;
+    }
+    .slide-text{
+      flex:1 1 40%;
+      text-align:left;
+    }
+    .slide-text h2{
+      font-size:1.2rem;
+      background:linear-gradient(90deg,var(--gold1),var(--gold2));
+      -webkit-background-clip:text;
+      color:transparent;
+      font-weight:700;
+    }
+    .slide-text p{
+      color:var(--muted);
+      margin-top:6px;
+      font-size:.9rem;
+      line-height:1.5;
+    }
+    @media(max-width:768px){
+      .banner-container{flex-direction:column;padding:14px 14px 18px}
+      .slide-text{text-align:center}
+      .slide-text h2{font-size:1.05rem}
+      .slide-text p{font-size:.85rem}
+    }
 
-/* Footer */
-footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 0 80px;border-top:1px solid rgba(255,255,255,.05)}
+    /* Section Title */
+    .section-title{
+      text-align:center;
+      font-size:1.35rem;
+      margin:34px auto 18px;
+      font-weight:700;
+      background:linear-gradient(90deg,var(--gold1),var(--gold2));
+      -webkit-background-clip:text;
+      color:transparent;
+    }
+    @media(max-width:480px){
+      .section-title{font-size:1.15rem;margin:26px auto 14px}
+    }
 
-/* Download Button */
-.download-big{position:fixed;left:50%;transform:translateX(-50%);bottom:15px;z-index:70;background:linear-gradient(90deg,var(--gold1),var(--gold2));color:#000;padding:14px 40px;border-radius:50px;font-size:1rem;font-weight:700;text-decoration:none;box-shadow:0 0 25px rgba(198,164,84,.25)}
-</style>
+    /* Game Gallery */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+      gap:16px;
+      max-width:1080px;
+      margin:0 auto;
+      padding:0 12px;
+    }
+    .tile{
+      background:#181818;
+      border:1px solid var(--line);
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 4px 18px rgba(198,164,84,.08);
+      text-align:center;
+      padding-bottom:10px;
+    }
+    .tile img{
+      width:100%;
+      height:160px;
+      object-fit:contain;
+      padding:10px;
+    }
+    .tile p{
+      color:var(--muted);
+      font-size:.85rem;
+      margin-top:2px;
+      padding:0 6px;
+    }
+    .read-more{
+      color:var(--gold1);
+      font-size:.8rem;
+      cursor:pointer;
+      display:block;
+      margin-top:2px;
+    }
+
+    /* Rewards & Features (Lucky Draw / FreeCash / Refer & Earn) */
+    .bonus-intro{
+      max-width:1080px;
+      margin:40px auto 10px;
+      padding:0 12px;
+    }
+    .bonus-intro .section-title{margin-top:0}
+    .bonus-cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:18px;
+    }
+    .bonus-card{
+      background:#181818;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;
+      padding:18px 18px 16px;
+      box-shadow:0 4px 24px rgba(198,164,84,.1);
+    }
+    .bonus-card h4{
+      color:var(--gold1);
+      margin-bottom:6px;
+      font-size:1.02rem;
+    }
+    .bonus-card p{
+      color:var(--muted);
+      font-size:.9rem;
+      line-height:1.7;
+      text-align:justify;
+    }
+
+    /* Player Reviews */
+    .reviews{
+      max-width:1080px;
+      margin:40px auto 10px;
+      padding:0 12px;
+    }
+    .reviews .section-title{margin-top:0}
+    .review-list{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:16px;
+    }
+    .review{
+      background:#181818;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:12px 14px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      box-shadow:0 4px 20px rgba(198,164,84,.08);
+    }
+    .review img{
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid var(--gold1);
+      flex-shrink:0;
+    }
+    .review h4{
+      font-size:.95rem;
+      color:var(--gold1);
+      margin-bottom:2px;
+    }
+    .review p{
+      color:var(--muted);
+      font-size:.85rem;
+      line-height:1.45;
+    }
+    @media(max-width:768px){
+      .review{flex-direction:row;text-align:left}
+    }
+
+    /* About & Policies (Accordion) */
+    .faq{
+      max-width:1080px;
+      margin:40px auto 0;
+      padding:0 12px 10px;
+    }
+    .faq .section-title{margin-top:0}
+    .faq-item{
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:12px;
+      margin-bottom:10px;
+      background:#181818;
+      overflow:hidden;
+      transition:.3s;
+    }
+    .faq-question{
+      padding:12px 16px;
+      font-weight:600;
+      font-size:.95rem;
+      cursor:pointer;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .faq-question span{
+      transition:.3s;
+      font-size:.85rem;
+    }
+    .faq-answer{
+      display:none;
+      padding:0 16px 14px 16px;
+      color:var(--muted);
+      font-size:.88rem;
+      line-height:1.7;
+      text-align:justify;
+    }
+    .faq-item.active .faq-answer{display:block}
+    .faq-item.active .faq-question{
+      background:linear-gradient(90deg,var(--gold1),var(--gold2));
+      color:#111;
+    }
+    .faq-item.active .faq-question span{
+      transform:rotate(90deg);
+    }
+
+    /* Footer */
+    footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:.82rem;
+      padding:18px 0 80px;
+      border-top:1px solid rgba(255,255,255,.05);
+      margin-top:18px;
+    }
+
+    /* Download Button */
+    .download-big{
+      position:fixed;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:14px;
+      z-index:70;
+      background:linear-gradient(90deg,var(--gold1),var(--gold2));
+      color:#000;
+      padding:12px 40px;
+      border-radius:50px;
+      font-size:.95rem;
+      font-weight:700;
+      text-decoration:none;
+      box-shadow:0 0 22px rgba(198,164,84,.3);
+    }
+    @media(max-width:480px){
+      .download-big{
+        padding:10px 30px;
+        font-size:.88rem;
+        bottom:10px;
+      }
+    }
+  </style>
 </head>
 <body>
-<header><img src="https://i.imgur.com/lgEvF8E.png" alt="Tara777 Logo"></header>
+<header>
+  <img src="https://i.imgur.com/lgEvF8E.png" alt="Tara777 Logo">
+</header>
 
 <div class="follow-bar">
+  <!-- Replace # with real links -->
   <a href="#"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C18 4.8 12 4.8 12 4.8s-6 0-7.6.4a2.8 2.8 0 0 0-2 2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.8 2.8 0 0 0 2 2c1.6.4 7.6.4 7.6.4s6 0 7.6-.4a2.8 2.8 0 0 0 2-2c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15.5V8.5L16 12l-6 3.5Z"/></svg></a>
   <a href="#"><svg viewBox="0 0 24 24"><path d="M13 22v-8h2.5l.5-3H13V9.5c0-.87.28-1.5 1.7-1.5H16V5.3c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.3-3.8 3.9V11H7v3h3v8h3Z"/></svg></a>
   <a href="#"><svg viewBox="0 0 24 24"><path d="M9.04 15.47 8.9 18.9c.35 0 .5-.15.68-.33l1.64-1.57 3.4 2.47c.62.35 1.06.17 1.22-.57l2.21-10.36c.2-.93-.33-1.3-.93-1.08L4.7 10.3c-.9.35-.88.86-.15 1.08l3.5 1.09 8.12-5.12c.38-.24.73-.11.45.13l-7.58 6.99Z"/></svg></a>
@@ -100,66 +423,244 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 0 80px
 </div>
 
 <section class="intro">
-  <h2>Play • Win • Enjoy</h2>
-  <p>Experience the thrill of real-time gaming at Tara777! With hundreds of slots, table games, and events, players enjoy top rewards, smooth gameplay, and daily chances to win big.</p>
+  <h1>Tara777 — Trusted Online Gaming & Rewards Platform</h1>
+  <p>
+    Tara777 is built for players who want a secure, transparent, and rewarding online gaming experience.
+    Enjoy popular slot titles, card games, live-style action, daily rewards, and seamless mobile performance
+    with fast, reliable payouts.
+  </p>
 </section>
 
 <section class="carousel">
-  <div class="slide active"><div class="banner-container"><div class="banner-img"><img src="https://i.imgur.com/G1OMDnq.jpeg"></div><div class="slide-text"><h2>Welcome to Tara777</h2><p>Update your app to the latest version and unlock new games!</p></div></div></div>
-  <div class="slide"><div class="banner-container"><div class="banner-img"><img src="https://i.imgur.com/t0BtS0o.jpeg"></div><div class="slide-text"><h2>Download Now</h2><p>Join thousands of winners enjoying instant play & rewards.</p></div></div></div>
-</section>
-
-<section class="section">
-  <h3>Game Gallery</h3>
-  <div class="grid">
-    <div class="tile"><img src="https://tara777-1.com/assets/sa1.png"><p><span class="text">Super Ace — Classic slot with card fusion combos.</span></p><span class="read-more">Read more</span></div>
-    <div class="tile"><img src="https://tara777-1.com/assets/sad.png"><p><span class="text">Sweet Aladdin — Spin to unlock magical treasures.</span></p><span class="read-more">Read more</span></div>
-    <div class="tile"><img src="https://tara777-1.com/assets/pok.png"><p><span class="text">Poker King — Play with skill, win like a pro.</span></p><span class="read-more">Read more</span></div>
-    <div class="tile"><img src="https://tara777-1.com/assets/f500.png"><p><span class="text">Fortune 500 — Build your empire of wealth!</span></p><span class="read-more">Read more</span></div>
+  <div class="slide active">
+    <div class="banner-container">
+      <div class="banner-img">
+        <img src="https://i.imgur.com/G1OMDnq.jpeg" alt="Tara777 App Preview">
+      </div>
+      <div class="slide-text">
+        <h2>Upgrade to the Latest Tara777 App</h2>
+        <p>Install the latest version to enjoy improved performance, new games, and smoother withdrawals.</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="banner-container">
+      <div class="banner-img">
+        <img src="https://i.imgur.com/t0BtS0o.jpeg" alt="Download Tara777">
+      </div>
+      <div class="slide-text">
+        <h2>Download in One Tap</h2>
+        <p>Get instant access to Tara777 directly from your browser with a safe and verified installation link.</p>
+      </div>
+    </div>
   </div>
 </section>
 
+<h3 class="section-title">Game Gallery</h3>
+<div class="grid">
+  <div class="tile">
+    <img src="https://tara777-1.com/assets/sa1.png" alt="Super Ace">
+    <p><span class="text">Super Ace — High-volatility classic with combo features and big multiplier potential.</span></p>
+    <span class="read-more">Read more</span>
+  </div>
+  <div class="tile">
+    <img src="https://tara777-1.com/assets/sad.png" alt="Sweet Aladdin">
+    <p><span class="text">Sweet Aladdin — Feature-rich slot with cascading wins and magical bonus rounds.</span></p>
+    <span class="read-more">Read more</span>
+  </div>
+  <div class="tile">
+    <img src="https://tara777-1.com/assets/pok.png" alt="Poker King">
+    <p><span class="text">Poker King — Skill-based gameplay inspired by Texas Hold’em with competitive action.</span></p>
+    <span class="read-more">Read more</span>
+  </div>
+  <div class="tile">
+    <img src="https://tara777-1.com/assets/f500.png" alt="Fortune 500">
+    <p><span class="text">Fortune 500 — Business-themed slot where strategic spins can build massive rewards.</span></p>
+    <span class="read-more">Read more</span>
+  </div>
+</div>
+
 <section class="bonus-intro">
-  <h3>Rewards & Features</h3>
+  <h3 class="section-title">Rewards & Features</h3>
   <div class="bonus-cards">
-    <div class="bonus-card"><h4>Lucky Draw</h4><p>Join daily Lucky Draw events for a chance to win random bonuses, free spins, or cash prizes. Every player’s participation increases their luck, so spin daily to boost your winning potential!</p></div>
-    <div class="bonus-card"><h4>FreeCash</h4><p>Earn FreeCash instantly by completing small tasks, sharing events, or logging in daily. Your FreeCash can be used directly for gameplay or exchanged for exciting bonus credits.</p></div>
-    <div class="bonus-card"><h4>Refer & Earn</h4><p>Invite your friends to play Tara777 and enjoy lifetime referral rewards! Every time your referred player deposits or wins, you’ll receive exclusive bonuses credited straight to your account.</p></div>
+    <div class="bonus-card">
+      <h4>Lucky Draw</h4>
+      <p>
+        Tara777 hosts regular Lucky Draw campaigns where eligible players can win bonus credits, FreeCash,
+        free spins, or special event rewards. Participation may be based on simple conditions such as daily login,
+        minimum deposit, or activity during promotional periods. All Lucky Draw results are processed fairly and
+        transparently, ensuring every qualified player has a real chance to win.
+      </p>
+    </div>
+    <div class="bonus-card">
+      <h4>FreeCash</h4>
+      <p>
+        FreeCash is our flexible reward system that allows players to receive extra value through missions,
+        login streaks, seasonal campaigns, and partner events. Qualified FreeCash can be used directly for gameplay
+        or to unlock dedicated bonuses according to the promotion rules. Terms for each FreeCash event are clearly
+        displayed in-app to maintain transparency and fair use.
+      </p>
+    </div>
+    <div class="bonus-card">
+      <h4>Refer &amp; Earn</h4>
+      <p>
+        With the Refer &amp; Earn program, players can invite friends using their unique referral link and receive
+        long-term benefits when those friends register, deposit, and start playing. Commission or bonus structures
+        are defined per campaign and may include tiered rewards based on your downline’s activity. Abuse, fake
+        accounts, and multi-accounting are strictly prohibited to protect genuine players.
+      </p>
+    </div>
   </div>
 </section>
 
 <section class="reviews">
-  <h3>Player Reviews</h3>
+  <h3 class="section-title">Player Reviews</h3>
   <div class="review-list">
-    <div class="review"><img src="https://i.imgur.com/1Q9Z1ZC.jpeg"><div><h4>Ravi K.</h4><p>“Won 5,000₹ on my first spin! Tara777 is 100% real and payouts are fast.”</p></div></div>
-    <div class="review"><img src="https://i.imgur.com/yo6UceB.jpeg"><div><h4>Maria G.</h4><p>“Smooth app, beautiful design, and real bonuses every day. Highly recommend!”</p></div></div>
-    <div class="review"><img src="https://i.imgur.com/jtUDFyP.jpeg"><div><h4>Arjun S.</h4><p>“Customer service is great and I always get my withdrawal within minutes.”</p></div></div>
+    <div class="review">
+      <img src="https://i.imgur.com/1Q9Z1ZC.jpeg" alt="Player Review 1">
+      <div>
+        <h4>Ravi K.</h4>
+        <p>“Fast withdrawals and smooth gameplay. Tara777 has been my go-to platform for daily gaming.”</p>
+      </div>
+    </div>
+    <div class="review">
+      <img src="https://i.imgur.com/yo6UceB.jpeg" alt="Player Review 2">
+      <div>
+        <h4>Maria G.</h4>
+        <p>“I like the clear rules, active support, and consistent rewards. Very user-friendly experience.”</p>
+      </div>
+    </div>
+    <div class="review">
+      <img src="https://i.imgur.com/jtUDFyP.jpeg" alt="Player Review 3">
+      <div>
+        <h4>Arjun S.</h4>
+        <p>“Reliable payouts and transparent promos. The lucky events and bonuses keep it exciting.”</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="faq">
-  <h3>About & Policies</h3>
-  <div class="faq-item"><div class="faq-question">About Tara777<span>▶</span></div><div class="faq-answer">Tara777 is a trusted online gaming platform offering exciting slots, card games, and daily promotions. We aim to create a fair, fun, and rewarding gaming experience for all players.</div></div>
-  <div class="faq-item"><div class="faq-question">Privacy Policy<span>▶</span></div><div class="faq-answer">Your privacy is our top priority. We ensure that all personal and financial data is securely stored and never shared with third parties. Tara777 complies with global data protection standards.</div></div>
-  <div class="faq-item"><div class="faq-question">Terms & Conditions<span>▶</span></div><div class="faq-answer">By using Tara777, players agree to follow fair play rules. Bonuses cannot be abused or combined, and all gameplay must comply with responsible gaming practices.</div></div>
+  <h3 class="section-title">About &amp; Policies</h3>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>About Tara777</span><span>▶</span>
+    </div>
+    <div class="faq-answer">
+      Tara777 is an online gaming platform operated by Tara Entertainment Ltd., dedicated to providing players with
+      a secure, transparent, and entertaining digital gaming environment. Our platform focuses on popular online
+      slot titles, table-style games, and promotional events designed for responsible adults only.
+      <br><br>
+      We continuously optimize our technology, user interface, and reward systems to ensure fast loading speeds,
+      fair outcomes, and a smooth experience across mobile devices. All game results are generated by certified
+      game providers using industry-standard randomization mechanisms, and we strictly oppose any form of cheating
+      or manipulation.
+      <br><br>
+      Tara777 encourages responsible entertainment. We recommend that users play within their means, avoid chasing
+      losses, and contact our support team if they need assistance regarding account limits or gameplay guidance.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Privacy Policy</span><span>▶</span>
+    </div>
+    <div class="faq-answer">
+      We respect and protect the privacy of all Tara777 users. During registration and use of our services, we may
+      collect basic information such as username, contact details, device data, and transaction records. This data
+      is used solely for:
+      <br><br>
+      • Verifying your account and securing your profile;<br>
+      • Processing deposits, bonuses, and withdrawals accurately;<br>
+      • Preventing fraud, abuse, and unauthorized activities;<br>
+      • Improving platform performance, customer support, and promotional relevance.
+      <br><br>
+      Tara777 does not sell or rent your personal information to unrelated third parties. Data may be shared only
+      with trusted service providers (such as payment processors or security partners) where necessary to operate
+      the platform safely and in compliance with applicable laws. All information is stored with reasonable
+      technical and organizational safeguards to reduce the risk of unauthorized access or misuse.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Terms &amp; Conditions</span><span>▶</span>
+    </div>
+    <div class="faq-answer">
+      By accessing or using Tara777, you agree to comply with our Terms &amp; Conditions. Key principles include:
+      <br><br>
+      • You must be of legal age in your jurisdiction and solely responsible for complying with local laws.<br>
+      • Each user is allowed only one genuine account; duplicate, fake, or shared accounts may be restricted.<br>
+      • All bonuses, Lucky Draws, FreeCash, and Refer &amp; Earn rewards are subject to specific rules stated in
+        each promotion. Abuse, manipulation, or use of fraudulent data will result in cancellation of rewards and
+        potential account action.<br>
+      • Game outcomes are final and based on system records. Any suspected technical error will be reviewed by
+        our team, and adjustments (if any) will follow official logs.
+      <br><br>
+      Tara777 reserves the right to update these terms, promotional rules, or eligibility criteria when needed to
+      protect the platform and its players. We encourage users to review this section regularly for the latest
+      information.
+    </div>
+  </div>
 </section>
 
-<footer>© <span id="y"></span> Tara777. All rights reserved.</footer>
-<a class="download-big" href="#">Download</a>
+<footer>
+  © <span id="y"></span> Tara777. All rights reserved.
+</footer>
+
+<a class="download-big" href="#">
+  Download
+</a>
 
 <script>
-const slides=document.querySelectorAll('.slide');let current=0;
-setInterval(()=>{slides[current].classList.remove('active');current=(current+1)%slides.length;slides[current].classList.add('active');},3000);
-document.getElementById('y').textContent=new Date().getFullYear();
-document.querySelectorAll('.faq-question').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('active')));
-document.querySelectorAll('.read-more').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const p=btn.previousElementSibling.querySelector('.text');
-    if(btn.textContent==="Read more"){p.style.whiteSpace='normal';btn.textContent="Read less";}
-    else{p.style.whiteSpace='nowrap';p.style.overflow='hidden';p.style.textOverflow='ellipsis';btn.textContent="Read more";}
+  // Year
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  // Simple Carousel
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+  if (slides.length > 0) {
+    slides[0].classList.add('active');
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 3000);
+  }
+
+  // Accordion
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      item.classList.toggle('active');
+    });
   });
-});
-document.querySelectorAll('.text').forEach(t=>{t.style.whiteSpace='nowrap';t.style.overflow='hidden';t.style.textOverflow='ellipsis';});
+
+  // Game Gallery Read more / Read less
+  document.querySelectorAll('.read-more').forEach(btn => {
+    const textSpan = btn.previousElementSibling.querySelector('.text');
+    if (textSpan) {
+      // initial truncate style
+      textSpan.style.whiteSpace = 'nowrap';
+      textSpan.style.overflow = 'hidden';
+      textSpan.style.textOverflow = 'ellipsis';
+
+      btn.addEventListener('click', () => {
+        if (btn.textContent === 'Read more') {
+          textSpan.style.whiteSpace = 'normal';
+          textSpan.style.overflow = 'visible';
+          textSpan.style.textOverflow = 'unset';
+          btn.textContent = 'Read less';
+        } else {
+          textSpan.style.whiteSpace = 'nowrap';
+          textSpan.style.overflow = 'hidden';
+          textSpan.style.textOverflow = 'ellipsis';
+          btn.textContent = 'Read more';
+        }
+      });
+    }
+  });
 </script>
 </body>
 </html>
