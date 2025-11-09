@@ -3,20 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tara777 - Trusted Online Gaming & Slots Platform</title>
+  <title>Tara777 – Trusted Online Gaming & Rewards Platform</title>
 
-  <!-- SEO Meta -->
-  <meta name="description" content="Tara777 is a trusted online gaming platform offering secure deposits, fast withdrawals, lucky draw events, FreeCash rewards, and refer & earn bonuses. Play popular slots, card games, and premium titles with a safe and fair experience." />
-  <meta name="keywords" content="Tara777, online casino, online slots, lucky draw, FreeCash, refer and earn, real money games, secure gaming, fast withdrawal" />
+  <!-- Primary SEO -->
+  <meta name="description" content="Tara777 is a trusted online gaming & rewards platform offering secure play, popular online games, lucky draws, FreeCash, and refer & earn bonuses with fast and reliable payouts." />
+  <meta name="keywords" content="Tara777, online gaming, slots, games, lucky draw, FreeCash, refer and earn, rewards platform, real money rewards, secure payouts" />
+  <meta name="author" content="Tara777" />
   <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://www.tara777.com/" />
+  <link rel="canonical" href="https://yourdomain.com/" />
 
-  <!-- Social Preview (optional, edit URL/logo) -->
-  <meta property="og:title" content="Tara777 - Trusted Online Gaming Platform" />
-  <meta property="og:description" content="Play, win, and enjoy secure online gaming, lucky draws, FreeCash rewards and refer & earn bonuses on Tara777." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tara777 – Trusted Online Gaming & Rewards Platform" />
+  <meta property="og:description" content="Play securely, earn rewards, join lucky draws, claim FreeCash, and benefit from refer & earn bonuses on Tara777." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.tara777.com/" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:site_name" content="Tara777" />
   <meta property="og:image" content="https://i.imgur.com/lgEvF8E.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tara777 – Trusted Online Gaming & Rewards Platform" />
+  <meta name="twitter:description" content="Enjoy secure online gaming, rewards, lucky draws, FreeCash and refer & earn with Tara777." />
+  <meta name="twitter:image" content="https://i.imgur.com/lgEvF8E.png" />
+
+  <!-- JSON-LD Schema (update @id/url when域名确定) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Tara777",
+    "url": "https://yourdomain.com/",
+    "logo": "https://i.imgur.com/lgEvF8E.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "support@tara777.com",
+      "contactType": "customer support"
+    }]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Tara777",
+    "url": "https://yourdomain.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yourdomain.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
@@ -181,7 +218,7 @@
       text-align:left;
     }
     .slide-text h2{
-      font-size:1.2rem;
+      font-size:1.15rem;
       background:linear-gradient(90deg,var(--gold1),var(--gold2));
       -webkit-background-clip:text;
       color:transparent;
@@ -196,7 +233,7 @@
     @media(max-width:768px){
       .banner-container{flex-direction:column;padding:14px 14px 18px}
       .slide-text{text-align:center}
-      .slide-text h2{font-size:1.05rem}
+      .slide-text h2{font-size:1.02rem}
       .slide-text p{font-size:.85rem}
     }
 
@@ -252,7 +289,7 @@
       margin-top:2px;
     }
 
-    /* Rewards & Features (Lucky Draw / FreeCash / Refer & Earn) */
+    /* Rewards & Features (Bonus) */
     .bonus-intro{
       max-width:1080px;
       margin:40px auto 10px;
@@ -268,19 +305,18 @@
       background:#181818;
       border:1px solid rgba(255,255,255,.08);
       border-radius:16px;
-      padding:18px 18px 16px;
+      padding:16px 16px 14px;
       box-shadow:0 4px 24px rgba(198,164,84,.1);
     }
     .bonus-card h4{
       color:var(--gold1);
-      margin-bottom:6px;
-      font-size:1.02rem;
+      margin-bottom:4px;
+      font-size:1rem;
     }
     .bonus-card p{
       color:var(--muted);
-      font-size:.9rem;
-      line-height:1.7;
-      text-align:justify;
+      font-size:.88rem;
+      line-height:1.6;
     }
 
     /* Player Reviews */
@@ -340,7 +376,7 @@
       margin-bottom:10px;
       background:#181818;
       overflow:hidden;
-      transition:.3s;
+      transition:.25s;
     }
     .faq-question{
       padding:12px 16px;
@@ -351,25 +387,23 @@
       justify-content:space-between;
       align-items:center;
     }
-    .faq-question span{
-      transition:.3s;
-      font-size:.85rem;
+    .faq-question .label{flex:1}
+    .faq-question .arrow{
+      margin-left:10px;
+      font-size:.9rem;
     }
     .faq-answer{
       display:none;
       padding:0 16px 14px 16px;
       color:var(--muted);
       font-size:.88rem;
-      line-height:1.7;
+      line-height:1.8;
       text-align:justify;
     }
     .faq-item.active .faq-answer{display:block}
     .faq-item.active .faq-question{
       background:linear-gradient(90deg,var(--gold1),var(--gold2));
       color:#111;
-    }
-    .faq-item.active .faq-question span{
-      transform:rotate(90deg);
     }
 
     /* Footer */
@@ -414,20 +448,32 @@
 
 <div class="follow-bar">
   <!-- Replace # with real links -->
-  <a href="#"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C18 4.8 12 4.8 12 4.8s-6 0-7.6.4a2.8 2.8 0 0 0-2 2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.8 2.8 0 0 0 2 2c1.6.4 7.6.4 7.6.4s6 0 7.6-.4a2.8 2.8 0 0 0 2-2c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15.5V8.5L16 12l-6 3.5Z"/></svg></a>
-  <a href="#"><svg viewBox="0 0 24 24"><path d="M13 22v-8h2.5l.5-3H13V9.5c0-.87.28-1.5 1.7-1.5H16V5.3c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.3-3.8 3.9V11H7v3h3v8h3Z"/></svg></a>
-  <a href="#"><svg viewBox="0 0 24 24"><path d="M9.04 15.47 8.9 18.9c.35 0 .5-.15.68-.33l1.64-1.57 3.4 2.47c.62.35 1.06.17 1.22-.57l2.21-10.36c.2-.93-.33-1.3-.93-1.08L4.7 10.3c-.9.35-.88.86-.15 1.08l3.5 1.09 8.12-5.12c.38-.24.73-.11.45.13l-7.58 6.99Z"/></svg></a>
-  <a href="#"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.35L3 21l4.76-1.25A9 9 0 1 0 12 3Zm0 16a7 7 0 0 1-3.67-1.03l-.26-.16-2.83.74.76-2.75-.18-.28A7 7 0 1 1 12 19Zm3.94-4.42c-.22-.11-1.3-.64-1.5-.72s-.35-.11-.5.11-.57.72-.7.87-.26.16-.48.05a5.6 5.6 0 0 1-1.64-1.02 6.15 6.15 0 0 1-1.14-1.42c-.12-.21 0-.33.09-.45.09-.09.21-.26.32-.39s.15-.22.23-.37a.43.43 0 0 0 0-.41c-.07-.11-.5-1.19-.68-1.63s-.36-.37-.5-.38h-.42a.8.8 0 0 0-.58.27 2.4 2.4 0 0 0-.75 1.76 4.15 4.15 0 0 0 .87 2.16 9.49 9.49 0 0 0 3.69 3.2 12.66 12.66 0 0 0 1.26.47 3 3 0 0 0 1.39.09 2.25 2.25 0 0 0 1.47-1.04 1.83 1.83 0 0 0 .13-1.04c-.05-.09-.2-.14-.42-.24Z"/></svg></a>
-  <a href="#"><svg viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7Zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3Zm5 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm4.5-.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z"/></svg></a>
-  <a href="#"><svg viewBox="0 0 24 24"><path d="M12 3a7 7 0 0 0-7 7v6a3 3 0 0 0 3 3h2v-6H8a1 1 0 0 1-1-1v-2a5 5 0 0 1 10 0v2a1 1 0 0 1-1 1h-2v6h2a3 3 0 0 0 3-3v-6a7 7 0 0 0-7-7Z"/></svg></a>
+  <a href="#" title="YouTube">
+    <svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C18 4.8 12 4.8 12 4.8s-6 0-7.6.4a2.8 2.8 0 0 0-2 2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.8 2.8 0 0 0 2 2c1.6.4 7.6.4 7.6.4s6 0 7.6-.4a2.8 2.8 0 0 0 2-2c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15.5V8.5L16 12l-6 3.5Z"/></svg>
+  </a>
+  <a href="#" title="Facebook">
+    <svg viewBox="0 0 24 24"><path d="M13 22v-8h2.5l.5-3H13V9.5c0-.87.28-1.5 1.7-1.5H16V5.3c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.3-3.8 3.9V11H7v3h3v8h3Z"/></svg>
+  </a>
+  <a href="#" title="Telegram">
+    <svg viewBox="0 0 24 24"><path d="M9.04 15.47 8.9 18.9c.35 0 .5-.15.68-.33l1.64-1.57 3.4 2.47c.62.35 1.06.17 1.22-.57l2.21-10.36c.2-.93-.33-1.3-.93-1.08L4.7 10.3c-.9.35-.88.86-.15 1.08l3.5 1.09 8.12-5.12c.38-.24.73-.11.45.13l-7.58 6.99Z"/></svg>
+  </a>
+  <a href="#" title="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.35L3 21l4.76-1.25A9 9 0 1 0 12 3Zm0 16a7 7 0 0 1-3.67-1.03l-.26-.16-2.83.74.76-2.75-.18-.28A7 7 0 1 1 12 19Zm3.94-4.42c-.22-.11-1.3-.64-1.5-.72s-.35-.11-.5.11-.57.72-.7.87-.26.16-.48.05a5.6 5.6 0 0 1-1.64-1.02 6.15 6.15 0 0 1-1.14-1.42c-.12-.21 0-.33.09-.45.09-.09.21-.26.32-.39s.15-.22.23-.37a.43.43 0 0 0 0-.41c-.07-.11-.5-1.19-.68-1.63s-.36-.37-.5-.38h-.42a.8.8 0 0 0-.58.27 2.4 2.4 0 0 0-.75 1.76 4.15 4.15 0 0 0 .87 2.16 9.49 9.49 0 0 0 3.69 3.2 12.66 12.66 0 0 0 1.26.47 3 3 0 0 0 1.39.09 2.25 2.25 0 0 0 1.47-1.04 1.83 1.83 0 0 0 .13-1.04c-.05-.09-.2-.14-.42-.24Z"/></svg>
+  </a>
+  <a href="#" title="Instagram">
+    <svg viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7Zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3Zm5 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm4.5.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z"/></svg>
+  </a>
+  <a href="#" title="Support">
+    <svg viewBox="0 0 24 24"><path d="M12 3a7 7 0 0 0-7 7v6a3 3 0 0 0 3 3h2v-6H8a1 1 0 0 1-1-1v-2a5 5 0 0 1 10 0v2a1 1 0 0 1-1 1h-2v6h2a3 3 0 0 0 3-3v-6a7 7 0 0 0-7-7Z"/></svg>
+  </a>
 </div>
 
 <section class="intro">
-  <h1>Tara777 — Trusted Online Gaming & Rewards Platform</h1>
+  <h1>Tara777 – Trusted Online Gaming & Rewards Platform</h1>
   <p>
-    Tara777 is built for players who want a secure, transparent, and rewarding online gaming experience.
-    Enjoy popular slot titles, card games, live-style action, daily rewards, and seamless mobile performance
-    with fast, reliable payouts.
+    Tara777 is a dedicated online gaming & rewards platform designed for players who value security,
+    transparency, and fast payouts. Enjoy a curated selection of popular online games, daily bonuses,
+    and promotional events while playing in a stable, mobile-friendly environment.
   </p>
 </section>
 
@@ -439,7 +485,7 @@
       </div>
       <div class="slide-text">
         <h2>Upgrade to the Latest Tara777 App</h2>
-        <p>Install the latest version to enjoy improved performance, new games, and smoother withdrawals.</p>
+        <p>Install the latest version for smoother gameplay, enhanced security, and access to new events.</p>
       </div>
     </div>
   </div>
@@ -449,8 +495,8 @@
         <img src="https://i.imgur.com/t0BtS0o.jpeg" alt="Download Tara777">
       </div>
       <div class="slide-text">
-        <h2>Download in One Tap</h2>
-        <p>Get instant access to Tara777 directly from your browser with a safe and verified installation link.</p>
+        <h2>Instant Download & Easy Login</h2>
+        <p>Download directly from our official page and log in with your existing mobile number in seconds.</p>
       </div>
     </div>
   </div>
@@ -460,22 +506,22 @@
 <div class="grid">
   <div class="tile">
     <img src="https://tara777-1.com/assets/sa1.png" alt="Super Ace">
-    <p><span class="text">Super Ace — High-volatility classic with combo features and big multiplier potential.</span></p>
+    <p><span class="text">Super Ace — High-volatility classic with combo features and multiplier potential for experienced players.</span></p>
     <span class="read-more">Read more</span>
   </div>
   <div class="tile">
     <img src="https://tara777-1.com/assets/sad.png" alt="Sweet Aladdin">
-    <p><span class="text">Sweet Aladdin — Feature-rich slot with cascading wins and magical bonus rounds.</span></p>
+    <p><span class="text">Sweet Aladdin — Feature-packed game with cascading wins, themed symbols and bonus triggers.</span></p>
     <span class="read-more">Read more</span>
   </div>
   <div class="tile">
     <img src="https://tara777-1.com/assets/pok.png" alt="Poker King">
-    <p><span class="text">Poker King — Skill-based gameplay inspired by Texas Hold’em with competitive action.</span></p>
+    <p><span class="text">Poker King — Competitive poker-style gameplay for users who enjoy strategic decision-making.</span></p>
     <span class="read-more">Read more</span>
   </div>
   <div class="tile">
     <img src="https://tara777-1.com/assets/f500.png" alt="Fortune 500">
-    <p><span class="text">Fortune 500 — Business-themed slot where strategic spins can build massive rewards.</span></p>
+    <p><span class="text">Fortune 500 — Business-inspired theme with stacked rewards and progressive-style excitement.</span></p>
     <span class="read-more">Read more</span>
   </div>
 </div>
@@ -485,30 +531,15 @@
   <div class="bonus-cards">
     <div class="bonus-card">
       <h4>Lucky Draw</h4>
-      <p>
-        Tara777 hosts regular Lucky Draw campaigns where eligible players can win bonus credits, FreeCash,
-        free spins, or special event rewards. Participation may be based on simple conditions such as daily login,
-        minimum deposit, or activity during promotional periods. All Lucky Draw results are processed fairly and
-        transparently, ensuring every qualified player has a real chance to win.
-      </p>
+      <p>Join scheduled lucky draw events for a chance to receive bonus credits or special rewards based on your activity during the campaign period.</p>
     </div>
     <div class="bonus-card">
       <h4>FreeCash</h4>
-      <p>
-        FreeCash is our flexible reward system that allows players to receive extra value through missions,
-        login streaks, seasonal campaigns, and partner events. Qualified FreeCash can be used directly for gameplay
-        or to unlock dedicated bonuses according to the promotion rules. Terms for each FreeCash event are clearly
-        displayed in-app to maintain transparency and fair use.
-      </p>
+      <p>Receive FreeCash from selected promotions, login streaks, and events. Eligible FreeCash can be used according to the terms of each offer.</p>
     </div>
     <div class="bonus-card">
       <h4>Refer &amp; Earn</h4>
-      <p>
-        With the Refer &amp; Earn program, players can invite friends using their unique referral link and receive
-        long-term benefits when those friends register, deposit, and start playing. Commission or bonus structures
-        are defined per campaign and may include tiered rewards based on your downline’s activity. Abuse, fake
-        accounts, and multi-accounting are strictly prohibited to protect genuine players.
-      </p>
+      <p>Invite friends to Tara777 and earn additional rewards when they register and participate genuinely in platform activities.</p>
     </div>
   </div>
 </section>
@@ -520,21 +551,21 @@
       <img src="https://i.imgur.com/1Q9Z1ZC.jpeg" alt="Player Review 1">
       <div>
         <h4>Ravi K.</h4>
-        <p>“Fast withdrawals and smooth gameplay. Tara777 has been my go-to platform for daily gaming.”</p>
+        <p>“Smooth interface and quick support response. Payouts have been reliable for me.”</p>
       </div>
     </div>
     <div class="review">
       <img src="https://i.imgur.com/yo6UceB.jpeg" alt="Player Review 2">
       <div>
         <h4>Maria G.</h4>
-        <p>“I like the clear rules, active support, and consistent rewards. Very user-friendly experience.”</p>
+        <p>“Promotions are clear and updated. The platform feels stable and easy to use on mobile.”</p>
       </div>
     </div>
     <div class="review">
       <img src="https://i.imgur.com/jtUDFyP.jpeg" alt="Player Review 3">
       <div>
         <h4>Arjun S.</h4>
-        <p>“Reliable payouts and transparent promos. The lucky events and bonuses keep it exciting.”</p>
+        <p>“Good variety of games and transparent rules. I appreciate the straightforward experience.”</p>
       </div>
     </div>
   </div>
@@ -545,68 +576,77 @@
 
   <div class="faq-item">
     <div class="faq-question">
-      <span>About Tara777</span><span>▶</span>
+      <span class="label">About Tara777</span>
+      <span class="arrow">∨</span>
     </div>
     <div class="faq-answer">
-      Tara777 is an online gaming platform operated by Tara Entertainment Ltd., dedicated to providing players with
-      a secure, transparent, and entertaining digital gaming environment. Our platform focuses on popular online
-      slot titles, table-style games, and promotional events designed for responsible adults only.
+      Tara777 is an online gaming &amp; rewards platform operated by Tara Entertainment Ltd., focused on delivering
+      a safe and efficient user experience. Our goal is to provide a modern environment where verified users can
+      access selected online games, promotional campaigns, and events with clear rules and transparent rewards.
       <br><br>
-      We continuously optimize our technology, user interface, and reward systems to ensure fast loading speeds,
-      fair outcomes, and a smooth experience across mobile devices. All game results are generated by certified
-      game providers using industry-standard randomization mechanisms, and we strictly oppose any form of cheating
-      or manipulation.
+      We continuously review our systems to maintain platform stability, optimize loading speed, and enhance security.
+      All featured titles are sourced from reputable providers or frameworks and are designed to follow fair-play logic.
+      We actively monitor suspicious patterns to protect genuine users from fraud, abuse, and unauthorized activities.
       <br><br>
-      Tara777 encourages responsible entertainment. We recommend that users play within their means, avoid chasing
-      losses, and contact our support team if they need assistance regarding account limits or gameplay guidance.
+      Tara777 promotes responsible participation. Users are encouraged to set personal limits, avoid excessive sessions,
+      and contact our support team if they need help regarding account controls, verification, or responsible usage.
+      Our support team is available through official channels listed on this site.
     </div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <span>Privacy Policy</span><span>▶</span>
+      <span class="label">Privacy Policy</span>
+      <span class="arrow">∨</span>
     </div>
     <div class="faq-answer">
-      We respect and protect the privacy of all Tara777 users. During registration and use of our services, we may
-      collect basic information such as username, contact details, device data, and transaction records. This data
-      is used solely for:
+      Tara777 is committed to protecting user data in a lawful, limited, and transparent manner. When you create an
+      account or interact with our services, we may collect information such as your name or nickname, mobile number,
+      contact details, basic device information, IP address, and transactional records required to operate the platform.
       <br><br>
-      • Verifying your account and securing your profile;<br>
-      • Processing deposits, bonuses, and withdrawals accurately;<br>
-      • Preventing fraud, abuse, and unauthorized activities;<br>
-      • Improving platform performance, customer support, and promotional relevance.
+      This information is used to:
+      verify your identity; secure your account; process deposits, rewards, and withdrawals; detect fraud or abuse;
+      improve platform performance; and provide tailored but responsible communication regarding promotions or updates.
       <br><br>
-      Tara777 does not sell or rent your personal information to unrelated third parties. Data may be shared only
-      with trusted service providers (such as payment processors or security partners) where necessary to operate
-      the platform safely and in compliance with applicable laws. All information is stored with reasonable
-      technical and organizational safeguards to reduce the risk of unauthorized access or misuse.
+      We do not sell, rent, or trade your personal data with unrelated third parties. Data may be shared only with
+      carefully selected service providers (for example: payment partners, verification tools, security services)
+      strictly for operational needs and in line with data protection principles.
+      <br><br>
+      We apply reasonable technical and organizational measures to help safeguard stored information and reduce the risk
+      of unauthorized access. Users should also protect their own credentials and avoid sharing login details with others.
+      By continuing to use Tara777, you consent to data handling as described in this policy. If our practices change,
+      we will update this section to keep users informed.
     </div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <span>Terms &amp; Conditions</span><span>▶</span>
+      <span class="label">Terms &amp; Conditions</span>
+      <span class="arrow">∨</span>
     </div>
     <div class="faq-answer">
-      By accessing or using Tara777, you agree to comply with our Terms &amp; Conditions. Key principles include:
+      By accessing or using Tara777, you agree to follow these Terms &amp; Conditions, which are designed to maintain
+      a fair and secure environment for all users.
       <br><br>
-      • You must be of legal age in your jurisdiction and solely responsible for complying with local laws.<br>
-      • Each user is allowed only one genuine account; duplicate, fake, or shared accounts may be restricted.<br>
-      • All bonuses, Lucky Draws, FreeCash, and Refer &amp; Earn rewards are subject to specific rules stated in
-        each promotion. Abuse, manipulation, or use of fraudulent data will result in cancellation of rewards and
-        potential account action.<br>
-      • Game outcomes are final and based on system records. Any suspected technical error will be reviewed by
-        our team, and adjustments (if any) will follow official logs.
+      • You must be of legal age in your jurisdiction and are solely responsible for ensuring that your use of the
+      platform complies with local regulations.<br>
+      • Each individual is allowed one genuine account. Duplicate, fake, or shared accounts, as well as the use of
+      false information, may lead to suspension or closure.<br>
+      • All promotions, including Lucky Draw, FreeCash, and Refer &amp; Earn, have specific rules. Abuse, bonus hunting,
+      automated participation, or any attempt to manipulate results can result in removal of rewards and account review.<br>
+      • Technical issues or discrepancies will be investigated based on system logs. Official records maintained by
+      Tara777 will be treated as final when resolving disputes.
       <br><br>
-      Tara777 reserves the right to update these terms, promotional rules, or eligibility criteria when needed to
-      protect the platform and its players. We encourage users to review this section regularly for the latest
-      information.
+      Tara777 reserves the right to update these Terms &amp; Conditions, eligibility criteria, or promotional structures
+      when necessary to protect platform integrity and user interests. Continued use of the platform after updates
+      indicates acceptance of the revised terms. For clarification or concerns, users are encouraged to contact our
+      support team through the official channels listed on this website.
     </div>
   </div>
 </section>
 
 <footer>
-  © <span id="y"></span> Tara777. All rights reserved.
+  © <span id="y"></span> Tara777. All rights reserved. Powered by Tara Entertainment Ltd.
 </footer>
 
 <a class="download-big" href="#">
@@ -617,7 +657,7 @@
   // Year
   document.getElementById('y').textContent = new Date().getFullYear();
 
-  // Simple Carousel
+  // Carousel
   const slides = document.querySelectorAll('.slide');
   let current = 0;
   if (slides.length > 0) {
@@ -629,11 +669,24 @@
     }, 3000);
   }
 
-  // Accordion
-  document.querySelectorAll('.faq-question').forEach(q => {
+  // Accordion (About / Privacy / Terms) with ∨ / ∧ toggle
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const q = item.querySelector('.faq-question');
+    const arrow = item.querySelector('.arrow');
     q.addEventListener('click', () => {
-      const item = q.parentElement;
-      item.classList.toggle('active');
+      const isActive = item.classList.contains('active');
+      // Close others if you want single-open; keep multi-open by removing this loop.
+      // document.querySelectorAll('.faq-item').forEach(i=>{
+      //   i.classList.remove('active');
+      //   const ar = i.querySelector('.arrow'); if(ar) ar.textContent='∨';
+      // });
+      if (isActive) {
+        item.classList.remove('active');
+        if (arrow) arrow.textContent = '∨';
+      } else {
+        item.classList.add('active');
+        if (arrow) arrow.textContent = '∧';
+      }
     });
   });
 
@@ -641,7 +694,7 @@
   document.querySelectorAll('.read-more').forEach(btn => {
     const textSpan = btn.previousElementSibling.querySelector('.text');
     if (textSpan) {
-      // initial truncate style
+      // initial truncate
       textSpan.style.whiteSpace = 'nowrap';
       textSpan.style.overflow = 'hidden';
       textSpan.style.textOverflow = 'ellipsis';
