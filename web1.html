@@ -16,18 +16,18 @@ header{width:100%;background:linear-gradient(90deg,var(--gold1),var(--gold2));di
 header img{height:38px;width:auto;max-width:160px}
 
 /* Follow Us */
-.follow-bar{position:sticky;top:70px;z-index:20;display:flex;justify-content:center;gap:10px;padding:10px 14px;backdrop-filter:blur(10px);background:rgba(255,255,255,.05);border-radius:30px;width:fit-content;margin:12px auto 0;box-shadow:0 0 20px rgba(198,164,84,.2)}
-.follow-bar a{position:relative;overflow:hidden;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--gold1),var(--gold2));display:flex;align-items:center;justify-content:center;text-decoration:none;transition:transform .25s ease}
+.follow-bar{position:sticky;top:70px;z-index:20;display:flex;justify-content:center;gap:10px;padding:10px 14px;backdrop-filter:blur(10px);background:rgba(255,255,255,.05);border-radius:30px;width:fit-content;margin:12px auto 0;box-shadow:0 0 20px rgba(198,164,84,.2);overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}
+.follow-bar::-webkit-scrollbar{display:none}
+.follow-bar a{position:relative;overflow:hidden;min-width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--gold1),var(--gold2));display:flex;align-items:center;justify-content:center;text-decoration:none;transition:transform .25s ease;flex:0 0 auto}
 .follow-bar a:hover{transform:translateY(-2px)}
 .follow-bar svg{width:20px;height:20px;fill:#111}
 .follow-bar a::before{content:"";position:absolute;top:0;left:-80%;width:60%;height:100%;background:linear-gradient(120deg,rgba(255,255,255,.08) 0%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.08) 100%);transform:skewX(-25deg);animation:iconShine 5.5s ease-in-out infinite}
-.follow-bar a:nth-child(1)::before{animation-delay:0s}
-.follow-bar a:nth-child(2)::before{animation-delay:.5s}
-.follow-bar a:nth-child(3)::before{animation-delay:1s}
-.follow-bar a:nth-child(4)::before{animation-delay:1.5s}
-.follow-bar a:nth-child(5)::before{animation-delay:2s}
-.follow-bar a:nth-child(6)::before{animation-delay:2.5s}
 @keyframes iconShine{0%{left:-80%}12%{left:120%}100%{left:120%}}
+
+/* Intro Section */
+.intro{max-width:880px;margin:22px auto;text-align:center;padding:0 16px}
+.intro h2{font-size:1.4rem;font-weight:700;background:linear-gradient(90deg,var(--gold1),var(--gold2));-webkit-background-clip:text;color:transparent;margin-bottom:10px}
+.intro p{color:var(--muted);line-height:1.6;font-size:1rem}
 
 /* Carousel */
 .carousel{max-width:1080px;margin:24px auto;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--bg-panel);box-shadow:0 6px 24px rgba(198,164,84,.1)}
@@ -46,9 +46,11 @@ header img{height:38px;width:auto;max-width:160px}
 
 /* Gallery */
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px}
-.tile{background:#181818;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(198,164,84,.08);transition:transform .25s ease}
+.tile{background:#181818;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(198,164,84,.08);transition:transform .25s ease;text-align:center;padding-bottom:10px}
 .tile:hover{transform:translateY(-3px)}
 .tile img{width:100%;height:160px;object-fit:contain;padding:10px}
+.tile p{color:var(--muted);font-size:.9rem;margin-top:4px;padding:0 6px}
+.read-more{color:var(--gold1);font-size:.85rem;cursor:pointer;display:block;margin-top:2px}
 
 /* Cards */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
@@ -56,21 +58,44 @@ header img{height:38px;width:auto;max-width:160px}
 .badge{display:inline-block;margin-bottom:8px;background:linear-gradient(90deg,var(--gold1),var(--gold2));color:#111;padding:6px 10px;border-radius:999px;font-size:.85rem;font-weight:700}
 .note{color:#bbb;font-size:.95rem;margin-top:10px}
 
+/* Bonus Intro Section */
+.bonus-intro{max-width:1080px;margin:36px auto;padding:0 12px}
+.bonus-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.bonus-card{background:#181818;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 24px rgba(198,164,84,.1)}
+.bonus-card h4{color:var(--gold1);margin-bottom:8px}
+.bonus-card p{color:var(--muted);font-size:.95rem;line-height:1.5}
+
+/* Player Reviews */
+.reviews{max-width:1080px;margin:36px auto;padding:0 12px;text-align:center}
+.review-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.review{background:#181818;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 4px 20px rgba(198,164,84,.08)}
+.review img{width:60px;height:60px;border-radius:50%;object-fit:cover;margin-bottom:10px;border:2px solid var(--gold1)}
+.review h4{font-size:1rem;color:var(--gold1);margin-bottom:4px}
+.review p{color:var(--muted);font-size:.9rem;line-height:1.4}
+
+/* FAQ */
+.faq{max-width:1080px;margin:36px auto;padding:0 12px}
+.faq h3{text-align:center;font-size:1.35rem;margin-bottom:18px;font-weight:700;background:linear-gradient(90deg,var(--gold1),var(--gold2));-webkit-background-clip:text;color:transparent}
+.faq-item{border:1px solid rgba(255,255,255,.1);border-radius:12px;margin-bottom:12px;overflow:hidden;background:#181818;transition:.3s}
+.faq-question{padding:14px 16px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-question span{transition:.3s}
+.faq-answer{display:none;padding:0 16px 14px 16px;color:var(--muted);font-size:.95rem;line-height:1.5}
+.faq-item.active .faq-answer{display:block}
+.faq-item.active .faq-question{background:linear-gradient(90deg,var(--gold1),var(--gold2));color:#111}
+.faq-item.active .faq-question span{transform:rotate(90deg)}
+
 /* Footer */
 footer{text-align:center;color:var(--muted);font-size:.9rem;padding:20px 0 100px;border-top:1px solid rgba(255,255,255,.05)}
 
 /* Download Button */
 .download-big{position:fixed;left:50%;transform:translateX(-50%);bottom:20px;z-index:70;background:linear-gradient(90deg,var(--gold1),var(--gold2));color:#000;padding:16px 46px;border-radius:50px;font-size:1.05rem;font-weight:700;text-decoration:none;box-shadow:0 0 25px rgba(198,164,84,.25);overflow:hidden;animation:pulse 3s infinite ease-in-out}
 .download-big:hover{transform:translateX(-50%) scale(1.03)}
-.download-big::before{content:"";position:absolute;top:0;left:-80%;width:55%;height:100%;background:linear-gradient(120deg,rgba(255,255,255,.08) 0%,rgba(255,255,255,.24) 50%,rgba(255,255,255,.08) 100%);transform:skewX(-25deg);animation:btnShine 8s ease-in-out infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 18px rgba(198,164,84,.25)}50%{box-shadow:0 0 35px rgba(198,164,84,.45)}}
-@keyframes btnShine{0%{left:-80%}14%{left:120%}100%{left:120%}}
 
 /* Responsive */
 @media (max-width:768px){
 .banner-container{flex-direction:column;padding:0 12px}
 .slide-text{text-align:center;padding:14px}
-.follow-bar{flex-wrap:wrap;width:90%}
 .download-big{padding:14px 32px;font-size:1rem;bottom:16px}
 }
 </style>
@@ -79,43 +104,93 @@ footer{text-align:center;color:var(--muted);font-size:.9rem;padding:20px 0 100px
 <header><img src="https://i.imgur.com/lgEvF8E.png" alt="Tara777 Logo"></header>
 
 <div class="follow-bar">
-  <!-- YouTube -->
-  <a href="#" title="YouTube" aria-label="YouTube">
-    <svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C18 4.8 12 4.8 12 4.8s-6 0-7.6.4a2.8 2.8 0 0 0-2 2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.8 2.8 0 0 0 2 2c1.6.4 7.6.4 7.6.4s6 0 7.6-.4a2.8 2.8 0 0 0 2-2c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15.5V8.5L16 12l-6 3.5Z"/></svg>
-  </a>
-  <!-- Facebook -->
+  <a href="#" title="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C18 4.8 12 4.8 12 4.8s-6 0-7.6.4a2.8 2.8 0 0 0-2 2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.8 2.8 0 0 0 2 2c1.6.4 7.6.4 7.6.4s6 0 7.6-.4a2.8 2.8 0 0 0 2-2c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15.5V8.5L16 12l-6 3.5Z"/></svg></a>
   <a href="#" title="Facebook"><svg viewBox="0 0 24 24"><path d="M13 22v-8h2.5l.5-3H13V9.5c0-.87.28-1.5 1.7-1.5H16V5.3c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.3-3.8 3.9V11H7v3h3v8h3Z"/></svg></a>
-  <!-- Telegram -->
   <a href="#" title="Telegram"><svg viewBox="0 0 24 24"><path d="M9.04 15.47 8.9 18.9c.35 0 .5-.15.68-.33l1.64-1.57 3.4 2.47c.62.35 1.06.17 1.22-.57l2.21-10.36c.2-.93-.33-1.3-.93-1.08L4.7 10.3c-.9.35-.88.86-.15 1.08l3.5 1.09 8.12-5.12c.38-.24.73-.11.45.13l-7.58 6.99Z"/></svg></a>
-  <!-- WhatsApp -->
   <a href="#" title="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.35L3 21l4.76-1.25A9 9 0 1 0 12 3Zm0 16a7 7 0 0 1-3.67-1.03l-.26-.16-2.83.74.76-2.75-.18-.28A7 7 0 1 1 12 19Zm3.94-4.42c-.22-.11-1.3-.64-1.5-.72s-.35-.11-.5.11-.57.72-.7.87-.26.16-.48.05a5.6 5.6 0 0 1-1.64-1.02 6.15 6.15 0 0 1-1.14-1.42c-.12-.21 0-.33.09-.45.09-.09.21-.26.32-.39s.15-.22.23-.37a.43.43 0 0 0 0-.41c-.07-.11-.5-1.19-.68-1.63s-.36-.37-.5-.38h-.42a.8.8 0 0 0-.58.27 2.4 2.4 0 0 0-.75 1.76 4.15 4.15 0 0 0 .87 2.16 9.49 9.49 0 0 0 3.69 3.2 12.66 12.66 0 0 0 1.26.47 3 3 0 0 0 1.39.09 2.25 2.25 0 0 0 1.47-1.04 1.83 1.83 0 0 0 .13-1.04c-.05-.09-.2-.14-.42-.24Z"/></svg></a>
-  <!-- Instagram -->
   <a href="#" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7Zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3Zm5 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm4.5-.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z"/></svg></a>
-  <!-- Support -->
   <a href="#" title="Support"><svg viewBox="0 0 24 24"><path d="M12 3a7 7 0 0 0-7 7v6a3 3 0 0 0 3 3h2v-6H8a1 1 0 0 1-1-1v-2a5 5 0 0 1 10 0v2a1 1 0 0 1-1 1h-2v6h2a3 3 0 0 0 3-3v-6a7 7 0 0 0-7-7Z"/></svg></a>
 </div>
 
-<section class="carousel">
-  <div class="slide active"><div class="banner-container"><div class="banner-img"><img src="https://i.imgur.com/G1OMDnq.jpeg"></div><div class="slide-text"><h2>Welcome to Tara777</h2><p>Update Your APP to Latest version</p></div></div></div>
-  <div class="slide"><div class="banner-container"><div class="banner-img"><img src="https://i.imgur.com/t0BtS0o.jpeg"></div><div class="slide-text"><h2>Downlaod Our App</h2><p>Select any download link to get our app.</p></div></div></div>
-  <div class="slide"><div class="banner-container"><div class="banner-img"><img src="https://i.imgur.com/bGYso1U.jpeg"></div><div class="slide-text"><h2>Install successfully</h2><p>Once installed, you’ll have the latest version.</p></div></div></div>
-  <div class="slide"><div class="banner-container"><div class="banner-img"><img src="https://i.imgur.com/75S8b09.jpeg"></div><div class="slide-text"><h2>Go to Log In Interface</h2><p>On the welcome screen, tap “I already have an account.”</p></div></div></div>
-  <div class="slide"><div class="banner-container"><div class="banner-img"><img src="https://i.imgur.com/AW7RPW9.jpeg"></div><div class="slide-text"><h2>Login</h2><p>Log in using your previous phone number and enjoy latest feature.</p></div></div></div>
+<section class="intro">
+  <h2>Play • Win • Enjoy</h2>
+  <p>Tara777 brings you a world of excitement with slot, card, and arcade games. Join thousands of players winning rewards every day and experience the thrill of real-time gaming fun.</p>
 </section>
 
-<section class="section"><h3>Game Gallery</h3><div class="grid"><div class="tile"><img src="https://tara777-1.com/assets/sa1.png"></div><div class="tile"><img src="https://tara777-1.com/assets/sad.png"></div><div class="tile"><img src="https://tara777-1.com/assets/pok.png"></div><div class="tile"><img src="https://tara777-1.com/assets/f500.png"></div></div></section>
+<section class="carousel">
+  <div class="slide active"><div class="banner-container"><div class="banner-img"><img src="https://i.imgur.com/G1OMDnq.jpeg"></div><div class="slide-text"><h2>Welcome to Tara777</h2><p>Update Your APP to Latest version</p></div></div></div>
+  <div class="slide"><div class="banner-container"><div class="banner-img"><img src="https://i.imgur.com/t0BtS0o.jpeg"></div><div class="slide-text"><h2>Download Our App</h2><p>Select any link to get the latest version instantly.</p></div></div></div>
+</section>
 
-<section class="section"><h3>Bonus & Rewards</h3><div class="cards"><div class="card"><span class="badge">Total Deposit Bonus</span><p class="note">Bonuses distributed next day based on your total daily deposit.</p></div><div class="card"><span class="badge">Daily Treats</span><p>Claim daily promo codes and mystery rewards.</p></div><div class="card"><span class="badge">Referral Rewards</span><p>Invite friends and earn exclusive bonuses together.</p></div></div></section>
+<section class="section">
+  <h3>Game Gallery</h3>
+  <div class="grid">
+    <div class="tile"><img src="https://tara777-1.com/assets/sa1.png"><p><span class="text">Super Ace — Classic slot with card fusion combos.</span></p><span class="read-more">Read more</span></div>
+    <div class="tile"><img src="https://tara777-1.com/assets/sad.png"><p><span class="text">Sweet Aladdin — Spin to unlock magical treasures.</span></p><span class="read-more">Read more</span></div>
+    <div class="tile"><img src="https://tara777-1.com/assets/pok.png"><p><span class="text">Poker King — Play with skill, win like a pro.</span></p><span class="read-more">Read more</span></div>
+    <div class="tile"><img src="https://tara777-1.com/assets/f500.png"><p><span class="text">Fortune 500 — Build your empire of wealth!</span></p><span class="read-more">Read more</span></div>
+  </div>
+</section>
+
+<section class="bonus-intro">
+  <h3>Bonus & Special Offers</h3>
+  <div class="bonus-cards">
+    <div class="bonus-card"><h4>Deposit Bonus</h4><p>Enjoy daily cashback and extra credits every time you top up. Bigger deposits unlock higher rewards.</p></div>
+    <div class="bonus-card"><h4>FreeCash</h4><p>Complete simple tasks or invite friends to earn FreeCash instantly redeemable for gameplay.</p></div>
+    <div class="bonus-card"><h4>Mystery Bonus</h4><p>Random surprise rewards appear during play — you never know when luck will strike!</p></div>
+  </div>
+</section>
+
+<section class="reviews">
+  <h3>Player Reviews</h3>
+  <div class="review-list">
+    <div class="review"><img src="https://i.imgur.com/1Q9Z1ZC.jpeg"><h4>Ravi K.</h4><p>“Won 5,000₹ on my first spin! Totally legit and exciting.”</p></div>
+    <div class="review"><img src="https://i.imgur.com/yo6UceB.jpeg"><h4>Maria G.</h4><p>“The app is smooth and bonuses come every day. Love it!”</p></div>
+    <div class="review"><img src="https://i.imgur.com/jtUDFyP.jpeg"><h4>Arjun S.</h4><p>“Fast withdrawals, fair games, and great support team.”</p></div>
+  </div>
+</section>
+
+<section class="faq">
+  <h3>Frequently Asked Questions</h3>
+  <div class="faq-item"><div class="faq-question">How to install Tara777?<span>▶</span></div><div class="faq-answer">Click “Install Tara777” below or from official link.</div></div>
+  <div class="faq-item"><div class="faq-question">How to claim deposit bonus?<span>▶</span></div><div class="faq-answer">Deposit and your bonus will be sent automatically next day.</div></div>
+  <div class="faq-item"><div class="faq-question">What payment methods supported?<span>▶</span></div><div class="faq-answer">UPay Wallet, GCash and local methods for secure deposits.</div></div>
+</section>
 
 <footer>© <span id="y"></span> Tara777. All rights reserved.</footer>
-<a class="download-big" href="#">Download</a>
+<a class="download-big" href="#">Install Tara777</a>
 
 <script>
 const slides=document.querySelectorAll('.slide');let current=0;
 setInterval(()=>{slides[current].classList.remove('active');current=(current+1)%slides.length;slides[current].classList.add('active');},3000);
 document.getElementById('y').textContent=new Date().getFullYear();
+
+// FAQ toggle
+document.querySelectorAll('.faq-question').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement;
+    item.classList.toggle('active');
+  });
+});
+
+// Read more toggle
+document.querySelectorAll('.read-more').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const p=btn.previousElementSibling.querySelector('.text');
+    if(btn.textContent==="Read more"){
+      p.style.whiteSpace='normal';
+      btn.textContent="Read less";
+    }else{
+      p.style.whiteSpace='nowrap';
+      p.style.overflow='hidden';
+      p.style.textOverflow='ellipsis';
+      btn.textContent="Read more";
+    }
+  });
+});
+document.querySelectorAll('.text').forEach(t=>{
+  t.style.whiteSpace='nowrap';t.style.overflow='hidden';t.style.textOverflow='ellipsis';
+});
 </script>
 </body>
 </html>
-
-
