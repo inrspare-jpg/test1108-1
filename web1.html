@@ -5,18 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tara777 – Trusted Online Gaming & Rewards Platform</title>
 
-  <!-- Primary SEO -->
   <meta name="description" content="Tara777 is a trusted online gaming & rewards platform offering secure play, popular online games, lucky draws, FreeCash, and refer & earn bonuses with fast and reliable payouts." />
   <meta name="keywords" content="Tara777, online gaming, slots, games, lucky draw, FreeCash, refer and earn, rewards platform, real money rewards, secure payouts" />
   <meta name="author" content="Tara777" />
   <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://yourdomain.com/" />
+  <link rel="canonical" href="https://tara777.com/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Tara777 – Trusted Online Gaming & Rewards Platform" />
   <meta property="og:description" content="Play securely, earn rewards, join lucky draws, claim FreeCash, and benefit from refer & earn bonuses on Tara777." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:url" content="https://tara777.com/" />
   <meta property="og:site_name" content="Tara777" />
   <meta property="og:image" content="https://i.imgur.com/lgEvF8E.png" />
 
@@ -26,32 +25,19 @@
   <meta name="twitter:description" content="Enjoy secure online gaming, rewards, lucky draws, FreeCash and refer & earn with Tara777." />
   <meta name="twitter:image" content="https://i.imgur.com/lgEvF8E.png" />
 
-  <!-- JSON-LD Schema (update @id/url when域名确定) -->
+  <!-- Schema.org (可根据最终域名调整) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Tara777",
-    "url": "https://yourdomain.com/",
+    "url": "https://tara777.com/",
     "logo": "https://i.imgur.com/lgEvF8E.png",
     "contactPoint": [{
       "@type": "ContactPoint",
       "email": "support@tara777.com",
       "contactType": "customer support"
     }]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Tara777",
-    "url": "https://yourdomain.com/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://yourdomain.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
   }
   </script>
 
@@ -83,16 +69,16 @@
       display:flex;
       justify-content:center;
       align-items:center;
-      padding:10px 0;
+      padding:30px 0;
       position:sticky;
       top:0;
       z-index:30;
       box-shadow:0 2px 12px rgba(198,164,84,.35);
     }
     header img{
-      height:38px;
+      height:48px;
       width:auto;
-      max-width:160px;
+      max-width:320px;
     }
     @media(max-width:480px){
       header img{
@@ -103,9 +89,6 @@
 
     /* Follow Us */
     .follow-bar{
-      position:sticky;
-      top:70px;
-      z-index:20;
       display:flex;
       justify-content:center;
       gap:10px;
@@ -151,6 +134,12 @@
       transform:skewX(-25deg);
       animation:iconShine 5.5s ease-in-out infinite;
     }
+    .follow-bar a:nth-child(1)::before{animation-delay:0s}
+    .follow-bar a:nth-child(2)::before{animation-delay:.5s}
+    .follow-bar a:nth-child(3)::before{animation-delay:1s}
+    .follow-bar a:nth-child(4)::before{animation-delay:1.5s}
+    .follow-bar a:nth-child(5)::before{animation-delay:2s}
+    .follow-bar a:nth-child(6)::before{animation-delay:2.5s}
     @keyframes iconShine{
       0%{left:-80%}
       12%{left:120%}
@@ -231,7 +220,7 @@
       line-height:1.5;
     }
     @media(max-width:768px){
-      .banner-container{flex-direction:column;padding:14px 14px 18px}
+      .banner-container{flex-direction:column;padding:14px}
       .slide-text{text-align:center}
       .slide-text h2{font-size:1.02rem}
       .slide-text p{font-size:.85rem}
@@ -265,9 +254,9 @@
       border:1px solid var(--line);
       border-radius:14px;
       overflow:hidden;
-      box-shadow:0 4px 18px rgba(198,164,84,.08);
       text-align:center;
       padding-bottom:10px;
+      box-shadow:0 4px 18px rgba(198,164,84,.08);
     }
     .tile img{
       width:100%;
@@ -280,22 +269,15 @@
       font-size:.85rem;
       margin-top:2px;
       padding:0 6px;
-    }
-    .read-more{
-      color:var(--gold1);
-      font-size:.8rem;
-      cursor:pointer;
-      display:block;
-      margin-top:2px;
+      line-height:1.5;
     }
 
-    /* Rewards & Features (Bonus) */
+    /* Rewards & Features */
     .bonus-intro{
       max-width:1080px;
       margin:40px auto 10px;
       padding:0 12px;
     }
-    .bonus-intro .section-title{margin-top:0}
     .bonus-cards{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -317,93 +299,6 @@
       color:var(--muted);
       font-size:.88rem;
       line-height:1.6;
-    }
-
-    /* Player Reviews */
-    .reviews{
-      max-width:1080px;
-      margin:40px auto 10px;
-      padding:0 12px;
-    }
-    .reviews .section-title{margin-top:0}
-    .review-list{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:16px;
-    }
-    .review{
-      background:#181818;
-      border:1px solid var(--line);
-      border-radius:16px;
-      padding:12px 14px;
-      display:flex;
-      align-items:center;
-      gap:10px;
-      box-shadow:0 4px 20px rgba(198,164,84,.08);
-    }
-    .review img{
-      width:56px;
-      height:56px;
-      border-radius:50%;
-      object-fit:cover;
-      border:2px solid var(--gold1);
-      flex-shrink:0;
-    }
-    .review h4{
-      font-size:.95rem;
-      color:var(--gold1);
-      margin-bottom:2px;
-    }
-    .review p{
-      color:var(--muted);
-      font-size:.85rem;
-      line-height:1.45;
-    }
-    @media(max-width:768px){
-      .review{flex-direction:row;text-align:left}
-    }
-
-    /* About & Policies (Accordion) */
-    .faq{
-      max-width:1080px;
-      margin:40px auto 0;
-      padding:0 12px 10px;
-    }
-    .faq .section-title{margin-top:0}
-    .faq-item{
-      border:1px solid rgba(255,255,255,.12);
-      border-radius:12px;
-      margin-bottom:10px;
-      background:#181818;
-      overflow:hidden;
-      transition:.25s;
-    }
-    .faq-question{
-      padding:12px 16px;
-      font-weight:600;
-      font-size:.95rem;
-      cursor:pointer;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
-    .faq-question .label{flex:1}
-    .faq-question .arrow{
-      margin-left:10px;
-      font-size:.9rem;
-    }
-    .faq-answer{
-      display:none;
-      padding:0 16px 14px 16px;
-      color:var(--muted);
-      font-size:.88rem;
-      line-height:1.8;
-      text-align:justify;
-    }
-    .faq-item.active .faq-answer{display:block}
-    .faq-item.active .faq-question{
-      background:linear-gradient(90deg,var(--gold1),var(--gold2));
-      color:#111;
     }
 
     /* Footer */
@@ -442,12 +337,13 @@
   </style>
 </head>
 <body>
+
 <header>
   <img src="https://i.imgur.com/lgEvF8E.png" alt="Tara777 Logo">
 </header>
 
 <div class="follow-bar">
-  <!-- Replace # with real links -->
+  <!-- Replace # with your official links -->
   <a href="#" title="YouTube">
     <svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C18 4.8 12 4.8 12 4.8s-6 0-7.6.4a2.8 2.8 0 0 0-2 2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.8 2.8 0 0 0 2 2c1.6.4 7.6.4 7.6.4s6 0 7.6-.4a2.8 2.8 0 0 0 2-2c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15.5V8.5L16 12l-6 3.5Z"/></svg>
   </a>
@@ -481,22 +377,59 @@
   <div class="slide active">
     <div class="banner-container">
       <div class="banner-img">
-        <img src="https://i.imgur.com/G1OMDnq.jpeg" alt="Tara777 App Preview">
+        <img src="https://i.imgur.com/0iLnBhw.jpeg" alt="Download latest version">
       </div>
       <div class="slide-text">
-        <h2>Upgrade to the Latest Tara777 App</h2>
-        <p>Install the latest version for smoother gameplay, enhanced security, and access to new events.</p>
+        <h2>Download the Latest Version</h2>
+        <p>Get the most stable and optimized Tara777 app for smooth performance and faster loading.</p>
       </div>
     </div>
   </div>
+
   <div class="slide">
     <div class="banner-container">
       <div class="banner-img">
-        <img src="https://i.imgur.com/t0BtS0o.jpeg" alt="Download Tara777">
+        <img src="https://i.imgur.com/9WcOkF8.jpeg" alt="Find new icon">
       </div>
       <div class="slide-text">
-        <h2>Instant Download & Easy Login</h2>
-        <p>Download directly from our official page and log in with your existing mobile number in seconds.</p>
+        <h2>Find the New Icon on Your Home Screen</h2>
+        <p>Once installed, look for the new Tara777 icon and open the app instantly.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="banner-container">
+      <div class="banner-img">
+        <img src="https://i.imgur.com/pgA3lKE.jpeg" alt="Already have account">
+      </div>
+      <div class="slide-text">
+        <h2>Select “I Already Have an Account”</h2>
+        <p>On the registration screen, choose this option to log in with your existing account.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="banner-container">
+      <div class="banner-img">
+        <img src="https://i.imgur.com/t6Htfiu.jpeg" alt="Login with phone">
+      </div>
+      <div class="slide-text">
+        <h2>Log In with Your Registered Mobile Number</h2>
+        <p>Use your previously registered phone number to access your account securely.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="banner-container">
+      <div class="banner-img">
+        <img src="https://i.imgur.com/AV0z43n.jpeg" alt="Enjoy new features">
+      </div>
+      <div class="slide-text">
+        <h2>Enjoy All-New Features</h2>
+        <p>Experience upgraded visuals, faster deposits, and new bonus events available in this version.</p>
       </div>
     </div>
   </div>
@@ -505,142 +438,37 @@
 <h3 class="section-title">Game Gallery</h3>
 <div class="grid">
   <div class="tile">
-    <img src="https://tara777-1.com/assets/sa1.png" alt="Super Ace">
-    <p><span class="text">Super Ace — High-volatility classic with combo features and multiplier potential for experienced players.</span></p>
-    <span class="read-more">Read more</span>
+    <img src="https://tara777-1.com/assets/sa1.png" alt="Super Ace 1">
+    <p>Super Ace 1 — A high-volatility classic featuring combo wins and multiplier chances, ideal for players who enjoy big-risk, big-reward gameplay.</p>
   </div>
   <div class="tile">
-    <img src="https://tara777-1.com/assets/sad.png" alt="Sweet Aladdin">
-    <p><span class="text">Sweet Aladdin — Feature-packed game with cascading wins, themed symbols and bonus triggers.</span></p>
-    <span class="read-more">Read more</span>
+    <img src="https://tara777-1.com/assets/sad.png" alt="Super Ace Deluxe">
+    <p>Super Ace Deluxe — An enhanced edition with upgraded visuals, richer effects, and more combo potential for thrill-seeking users.</p>
   </div>
   <div class="tile">
-    <img src="https://tara777-1.com/assets/pok.png" alt="Poker King">
-    <p><span class="text">Poker King — Competitive poker-style gameplay for users who enjoy strategic decision-making.</span></p>
-    <span class="read-more">Read more</span>
+    <img src="https://tara777-1.com/assets/pok.png" alt="Power of Kraken 1">
+    <p>Power of Kraken 1 — Dive into deep-sea reels, encounter the Kraken, and unlock powerful bonus rounds with dynamic wild features.</p>
   </div>
   <div class="tile">
-    <img src="https://tara777-1.com/assets/f500.png" alt="Fortune 500">
-    <p><span class="text">Fortune 500 — Business-inspired theme with stacked rewards and progressive-style excitement.</span></p>
-    <span class="read-more">Read more</span>
+    <img src="https://tara777-1.com/assets/f500.png" alt="Fortune Gems 500">
+    <p>Fortune Gems 500 — Collect shining gems, trigger multipliers, and enjoy smooth gameplay with stacked reward potential.</p>
   </div>
 </div>
 
 <section class="bonus-intro">
-  <h3 class="section-title">Rewards & Features</h3>
+  <h3 class="section-title">Rewards &amp; Features</h3>
   <div class="bonus-cards">
     <div class="bonus-card">
       <h4>Lucky Draw</h4>
-      <p>Join scheduled lucky draw events for a chance to receive bonus credits or special rewards based on your activity during the campaign period.</p>
+      <p>Join scheduled lucky draw events for a chance to receive bonus credits or special rewards based on your valid activity during the campaign period.</p>
     </div>
     <div class="bonus-card">
       <h4>FreeCash</h4>
-      <p>Receive FreeCash from selected promotions, login streaks, and events. Eligible FreeCash can be used according to the terms of each offer.</p>
+      <p>Receive FreeCash through selected promotions, login streaks, and special events. Usage follows the clear terms shown in each promotion.</p>
     </div>
     <div class="bonus-card">
       <h4>Refer &amp; Earn</h4>
-      <p>Invite friends to Tara777 and earn additional rewards when they register and participate genuinely in platform activities.</p>
-    </div>
-  </div>
-</section>
-
-<section class="reviews">
-  <h3 class="section-title">Player Reviews</h3>
-  <div class="review-list">
-    <div class="review">
-      <img src="https://i.imgur.com/1Q9Z1ZC.jpeg" alt="Player Review 1">
-      <div>
-        <h4>Ravi K.</h4>
-        <p>“Smooth interface and quick support response. Payouts have been reliable for me.”</p>
-      </div>
-    </div>
-    <div class="review">
-      <img src="https://i.imgur.com/yo6UceB.jpeg" alt="Player Review 2">
-      <div>
-        <h4>Maria G.</h4>
-        <p>“Promotions are clear and updated. The platform feels stable and easy to use on mobile.”</p>
-      </div>
-    </div>
-    <div class="review">
-      <img src="https://i.imgur.com/jtUDFyP.jpeg" alt="Player Review 3">
-      <div>
-        <h4>Arjun S.</h4>
-        <p>“Good variety of games and transparent rules. I appreciate the straightforward experience.”</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="faq">
-  <h3 class="section-title">About &amp; Policies</h3>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span class="label">About Tara777</span>
-      <span class="arrow">∨</span>
-    </div>
-    <div class="faq-answer">
-      Tara777 is an online gaming &amp; rewards platform operated by Tara Entertainment Ltd., focused on delivering
-      a safe and efficient user experience. Our goal is to provide a modern environment where verified users can
-      access selected online games, promotional campaigns, and events with clear rules and transparent rewards.
-      <br><br>
-      We continuously review our systems to maintain platform stability, optimize loading speed, and enhance security.
-      All featured titles are sourced from reputable providers or frameworks and are designed to follow fair-play logic.
-      We actively monitor suspicious patterns to protect genuine users from fraud, abuse, and unauthorized activities.
-      <br><br>
-      Tara777 promotes responsible participation. Users are encouraged to set personal limits, avoid excessive sessions,
-      and contact our support team if they need help regarding account controls, verification, or responsible usage.
-      Our support team is available through official channels listed on this site.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span class="label">Privacy Policy</span>
-      <span class="arrow">∨</span>
-    </div>
-    <div class="faq-answer">
-      Tara777 is committed to protecting user data in a lawful, limited, and transparent manner. When you create an
-      account or interact with our services, we may collect information such as your name or nickname, mobile number,
-      contact details, basic device information, IP address, and transactional records required to operate the platform.
-      <br><br>
-      This information is used to:
-      verify your identity; secure your account; process deposits, rewards, and withdrawals; detect fraud or abuse;
-      improve platform performance; and provide tailored but responsible communication regarding promotions or updates.
-      <br><br>
-      We do not sell, rent, or trade your personal data with unrelated third parties. Data may be shared only with
-      carefully selected service providers (for example: payment partners, verification tools, security services)
-      strictly for operational needs and in line with data protection principles.
-      <br><br>
-      We apply reasonable technical and organizational measures to help safeguard stored information and reduce the risk
-      of unauthorized access. Users should also protect their own credentials and avoid sharing login details with others.
-      By continuing to use Tara777, you consent to data handling as described in this policy. If our practices change,
-      we will update this section to keep users informed.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <span class="label">Terms &amp; Conditions</span>
-      <span class="arrow">∨</span>
-    </div>
-    <div class="faq-answer">
-      By accessing or using Tara777, you agree to follow these Terms &amp; Conditions, which are designed to maintain
-      a fair and secure environment for all users.
-      <br><br>
-      • You must be of legal age in your jurisdiction and are solely responsible for ensuring that your use of the
-      platform complies with local regulations.<br>
-      • Each individual is allowed one genuine account. Duplicate, fake, or shared accounts, as well as the use of
-      false information, may lead to suspension or closure.<br>
-      • All promotions, including Lucky Draw, FreeCash, and Refer &amp; Earn, have specific rules. Abuse, bonus hunting,
-      automated participation, or any attempt to manipulate results can result in removal of rewards and account review.<br>
-      • Technical issues or discrepancies will be investigated based on system logs. Official records maintained by
-      Tara777 will be treated as final when resolving disputes.
-      <br><br>
-      Tara777 reserves the right to update these Terms &amp; Conditions, eligibility criteria, or promotional structures
-      when necessary to protect platform integrity and user interests. Continued use of the platform after updates
-      indicates acceptance of the revised terms. For clarification or concerns, users are encouraged to contact our
-      support team through the official channels listed on this website.
+      <p>Invite genuine friends to join Tara777. When they register and participate normally, you may unlock additional rewards based on the program rules.</p>
     </div>
   </div>
 </section>
@@ -668,52 +496,7 @@
       slides[current].classList.add('active');
     }, 3000);
   }
-
-  // Accordion (About / Privacy / Terms) with ∨ / ∧ toggle
-  document.querySelectorAll('.faq-item').forEach(item => {
-    const q = item.querySelector('.faq-question');
-    const arrow = item.querySelector('.arrow');
-    q.addEventListener('click', () => {
-      const isActive = item.classList.contains('active');
-      // Close others if you want single-open; keep multi-open by removing this loop.
-      // document.querySelectorAll('.faq-item').forEach(i=>{
-      //   i.classList.remove('active');
-      //   const ar = i.querySelector('.arrow'); if(ar) ar.textContent='∨';
-      // });
-      if (isActive) {
-        item.classList.remove('active');
-        if (arrow) arrow.textContent = '∨';
-      } else {
-        item.classList.add('active');
-        if (arrow) arrow.textContent = '∧';
-      }
-    });
-  });
-
-  // Game Gallery Read more / Read less
-  document.querySelectorAll('.read-more').forEach(btn => {
-    const textSpan = btn.previousElementSibling.querySelector('.text');
-    if (textSpan) {
-      // initial truncate
-      textSpan.style.whiteSpace = 'nowrap';
-      textSpan.style.overflow = 'hidden';
-      textSpan.style.textOverflow = 'ellipsis';
-
-      btn.addEventListener('click', () => {
-        if (btn.textContent === 'Read more') {
-          textSpan.style.whiteSpace = 'normal';
-          textSpan.style.overflow = 'visible';
-          textSpan.style.textOverflow = 'unset';
-          btn.textContent = 'Read less';
-        } else {
-          textSpan.style.whiteSpace = 'nowrap';
-          textSpan.style.overflow = 'hidden';
-          textSpan.style.textOverflow = 'ellipsis';
-          btn.textContent = 'Read more';
-        }
-      });
-    }
-  });
 </script>
+
 </body>
 </html>
